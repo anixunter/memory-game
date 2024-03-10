@@ -18,7 +18,11 @@ const SingleCard = ({
     <div className="card">
       <div className={flipped ? "flipped" : ""}>
         <img className="front" src={card.src} />
-        <img className="back" src="/img/cover.png" onClick={clickHandler} />
+        <img
+          className="back"
+          src="/memory-game/img/cover.png"
+          onClick={clickHandler}
+        />
       </div>
     </div>
   );
