@@ -11,7 +11,7 @@ const SingleCard = ({
   const clickHandler = () => {
     !disabled && choiceOne // '&& choiceOne !== card' add this to prevent double clicking same card. double clicking it would reveal the other card
       ? setChoiceTwo(card)
-      : setChoiceOne(card); //used this disabled check to prevent continous clicking on the card
+      : setChoiceOne(card); //used the '!disabled' check to prevent continous clicking on the card
   };
 
   return (
