@@ -42,7 +42,9 @@ function App() {
       if (choiceOne.src === choiceTwo.src) {
         setCards((prev) => {
           return prev.map((card) => {
-            //this logic is awesome to set matched value true when two cards are matched
+            //this logic is awesome to set matched value true when two cards are matched so that
+            //matched card would stay flipped
+            //can compare card.src with choiceTwo.src as well, as it is basically the same thing
             if (card.src === choiceOne.src) {
               return { ...card, matched: true };
             } else {
